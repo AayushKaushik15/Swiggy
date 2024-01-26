@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 10px black;
+    height: 70px;
+    background-color: #24252A;
+    color: #fff;
+    z-index: 100;
+}
+
+.navbar .icon {
+    font-size: 45px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.navbar ul li i {
+    font-size: 0.8rem;
+}
+
+.navbar ul button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* 
+
+body container
+
+*/
+
+
+.body-container {
+    position: relative;
+    top: 110px;
+    padding: 0px 4%;
+   
+}
+
+.input-box {
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    width: 500px;
+    border: 1px solid #1B262C;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-box i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: orangered;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.input-box input {
+    padding: 12px 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;;
+}
+
+
+
+/* 
+
+card-container
+
+*/
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300,1fr));
+    margin-top: 40px;
+}
+
+.card-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-container {
+    /* width: 280px; */
+    /* width: 100%; */
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    position: relative;
+}
+
+.card-container:hover {
+    transform: scale(0.95);
+}
+
+.title h4 {
+    margin: 5px 0px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle i {
+    margin-right: 5px;
+    color: #fff   ;
+    background-color: green;
+    padding: 5px;
+    font-size: 0.7rem;
+    border-radius: 50px;
+}
+
+.toggle-2 {
+    margin-left: 10px;
+}
+
+.cuisines {
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.offer {
+    position: absolute;
+    top: 0;
+    font-size: 1.4rem;
+    /* font-style: italic; */
+    top: 175px;
+    background-color: #fff;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    font-family: "ProximaNovaCond-Black";
+    font-weight: bolder;
+
+}
+
+.shimmer {
+    position: relative;
+    top: 100px;
+    padding: 0px 4%;
+}
+
+.shimmer h1 {
+    color: gray; 
+}
+
+.filterRestaurants {
+    margin-top: 10px;
+}
+
+.filterRestaurants button {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filterRestaurants button:active {
+    transform: scale(0.95);
+}
+
+.clicked {
+    background-color: green;
+}
+
+
+
+.grocery {
+    position: relative;
+    top: 100px;
+}
+
+
+.grocery img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.grocery h1 {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    left: 25%;
+    font-size: 5rem;
+    color: green;
+    transform: translate(-50%, -50%);
+}
+
+
+.main-menu {
+    position: relative;
+    top: 100px;
+    padding: 0 4%;
+    width: 800px;
+    margin: 0 auto;
+}
+.restaurant-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.box-1-menu h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Open sans";
+}
+
+
+.box-1-menu p, span{
+    font-size: 0.87rem;
+    color: grey;
+}
+
+.box-2-menu {
+
+    /* border: 1px solid gray; */
+    padding: 10px;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 5px;
+    display: flex;
+}
+
+.box-2-menu i {
+    margin-right: 5px;
+    color: green;
+}
+
+
+.last-box {
+    margin-top: 10px;
+    border-bottom: 1px  dashed gray;
+    padding-bottom: 30px;
+}
+
+.last-box span {
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+}
+
+.last-box i {
+    color: gray;
+}
+
+.timing i {
+    margin-right: 10px;
+    align-items: center;
+    color: gray;
+}
+
+.timing span {
+    margin-right: 40px;
+}
+
+.timing {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed gray;
+    padding-bottom: 20px;
+}
+
+
+.time-2 {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+
+
+*/
+
+
+.recommendSections {
+    margin-block: 10px;
+    padding: 10px 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.recommendSections h4 {
+    font-weight: 500;
+    color: #5d5d5d
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.description {
+    /* border-bottom: 1px dashed gray; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 0.7rem;
+    max-width: 100px;
+}
+
+.title-section h4 {
+    color: black;
+    font-weight: bold;
+}
+
+.imgX {
+    position: relative;
+    margin-left: auto;  
+    margin-top: 10px;
+}
+
+
+.listing {
+    margin-block: 20px;
+    border-bottom: 1px dashed gray;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.imgX img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* float: right; */
+}
+
+
+
+.imgX button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1B262C;
+    color: #fff;
+    cursor: pointer; 
+    position: absolute;
+    left: 28px;
+    bottom: 0;
+
+}
+
+.infoX p {
+    max-width: 400px;
+}
+
+
+.status {
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+
+.veg img {
+    width: 20px;
+}
+
+
+
+.rupee {
+    color: black;
+    font-weight: bold;
+}
