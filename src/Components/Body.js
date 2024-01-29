@@ -63,7 +63,7 @@ const Body = () => {
         ) : (
           dataOne.map((value) => 
             <Link to={`/restaurants/${value.info.id}`}>
-                <Card cardInfo={value}/> 
+                <Card cardInfo={value} key = {value.info.id}/> 
             </Link>
           )
         )}

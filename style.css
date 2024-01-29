@@ -374,7 +374,7 @@ card-container
 
 
 .listing {
-    margin-block: 20px;
+
     border-bottom: 1px dashed gray;
     padding-bottom: 10px;
     display: flex;
@@ -417,13 +417,18 @@ card-container
 }
 
 
-.veg img {
-    width: 20px;
+.veg {
+    margin-block: 10px;
+    background-color: green;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
-
-
-
 .rupee {
     color: black;
     font-weight: bold;
 }
+
+

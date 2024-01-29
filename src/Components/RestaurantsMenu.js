@@ -57,8 +57,8 @@ const RestaurantsMenu = () => {
       
       <div className="listingRecommendSection">
         {
-            filterRecommendSection.map((value) => (
-                <RecommendList dataOfList = {value}/>
+            filterRecommendSection.map((value, index) => (
+                <RecommendList dataOfList = {value} key = {index}/>
             ))
         }
       </div>

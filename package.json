@@ -1,8 +1,9 @@
 {
   "name": "full-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "* using parcel to build the whole app * hooks * useEffect * useState * useParams * Routers * function component * class based component * custom hooks to make more optimize apps * higher order function",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npx parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
+    "l": "^0.6.0",
+    "parce": "^1.2.8",
     "parcel": "^2.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,5 +21,13 @@
   },
   "devDependencies": {
     "process": "^0.11.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AayushKaushik15/Swiggy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AayushKaushik15/Swiggy/issues"
+  },
+  "homepage": "https://github.com/AayushKaushik15/Swiggy#readme"
 }

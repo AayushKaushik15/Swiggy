@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ItemList from "./ItemList"
+import ItemList, {highOrder} from "./ItemList"
 
 const RecommendList = ({ dataOfList }) => {
 
@@ -13,7 +13,7 @@ const RecommendList = ({ dataOfList }) => {
     setShow(!show);
   };  
 
-  // const VegStatus = vegLogo(ItemList);
+  const HighOrderFunction = highOrder(ItemList);
 
   return (
     <div className="recommendSections" onClick={clickHandler}>
@@ -26,6 +26,9 @@ const RecommendList = ({ dataOfList }) => {
 
       <div className="itemlist">
        { show && itemCards.map((value) => (
+
+          value.card.info.isVeg ? <HighOrderFunction listInfo = {value}/> : 
+
           <ItemList listInfo={value} key = {value.card.info.id}/>
          
         ))}

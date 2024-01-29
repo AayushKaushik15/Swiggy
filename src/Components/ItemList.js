@@ -24,5 +24,20 @@ const ItemList = ({listInfo}) => {
 }
 
 
+//high order function --> high order function are the pure function 
+// which takes components and modified that component
+
+
+export function highOrder (ItemList) {
+    return (props) => {
+        return (
+            <div>
+                <h3 className="veg">VEG</h3>
+                <ItemList {...props}/>
+            </div>
+        )
+    }
+}
+
 
 export default ItemList;
