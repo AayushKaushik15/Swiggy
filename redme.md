@@ -42,3 +42,8 @@ Server Side Routing
     - Slice (cartSlice) -- to add items to the cart
     - Dispatch (action)
     - selector
+
+# Last concept from react-series 
+
+
+  - DATE ==> 2 / februrary/ 2024
