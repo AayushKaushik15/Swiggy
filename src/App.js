@@ -6,13 +6,12 @@ import Body from "./Components/Body";
 import RestaurantsMenu from "./Components/RestaurantsMenu";
 const Grocery = lazy(() => import("./Components/Grocery"))     //* lazy loading also known as on demand loading
 
-
 function App () {
     return (
-        <div className="main-app">
-            <Navbar/>
-            <Outlet/>
-        </div>
+            <div className="main-app">
+                <Navbar/>
+                <Outlet/>
+            </div>
     )
 }
 

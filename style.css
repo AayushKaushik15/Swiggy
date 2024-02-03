@@ -432,3 +432,11 @@ card-container
 }
 
 
+
+
+.cart-container {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 900px;
+}

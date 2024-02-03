@@ -1,11 +1,13 @@
 
+import { useDispatch } from "react-redux"
 import {cloudImg} from "../utils/constant"
 
 const ItemList = ({listInfo}) => {
 
-    console.log("---",listInfo)
+
 
     const {name, description,imageId, price, defaultPrice} = listInfo?.card?.info
+
     return (
         <div className="listing">
             <div className="infoX">
