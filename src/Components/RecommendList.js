@@ -16,15 +16,15 @@ const RecommendList = ({ dataOfList }) => {
   const HighOrderFunction = highOrder(ItemList);
 
   return (
-    <div className="recommendSections" onClick={clickHandler}>
-      <div className="title-section">
+    <div className="recommendSections" >
+      <div className="title-section" onClick={clickHandler}>
         <h4>
           {title} ({itemCards.length})
         </h4>
         <i class="fa-solid fa-chevron-down"></i>
       </div>
 
-      <div className="itemlist">
+      <div className="itemlist" >
        { show && itemCards.map((value) => (
 
           value.card.info.isVeg ? <HighOrderFunction listInfo = {value}/> : 
