@@ -5,13 +5,17 @@ import Navbar from "./Components/Navbar";
 import Body from "./Components/Body";
 import RestaurantsMenu from "./Components/RestaurantsMenu";
 const Grocery = lazy(() => import("./Components/Grocery"))     //* lazy loading also known as on demand loading
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 function App () {
     return (
+        <Provider store={appStore}>
             <div className="main-app">
                 <Navbar/>
                 <Outlet/>
             </div>
+        </Provider>
     )
 }
 
