@@ -2,11 +2,18 @@
 import { useDispatch } from "react-redux"
 import {cloudImg} from "../utils/constant"
 
+import { addItems } from "../utils/cartSlice";
+
 const ItemList = ({listInfo}) => {
 
-
+    const dispatch = useDispatch();
 
     const {name, description,imageId, price, defaultPrice} = listInfo?.card?.info
+
+    const  handler = (listInfo) =>  {
+        //dispatch an action;
+        dispatch(addItems(listInfo));
+    }  
 
     return (
         <div className="listing">
@@ -17,7 +24,7 @@ const ItemList = ({listInfo}) => {
             </div>
             <div className="imgX">
                 <img src={cloudImg + imageId} alt="" />
-                <button>ADD +</button>
+                <button onClick={() => handler(listInfo)}>ADD +</button>
             </div>
             <div>
             </div>

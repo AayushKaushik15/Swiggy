@@ -19,6 +19,7 @@ const Navbar = () => {
   const cart = useSelector(store => store.cart.items);   
   //? we are subscribing the store using the selector
 
+  console.log(cart)
   
   return (
     <div className="navbar">

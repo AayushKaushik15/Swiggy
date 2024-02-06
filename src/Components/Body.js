@@ -8,8 +8,6 @@ import status from "../utils/status";
 const Body = () => {
   const { dataOne, search, setSearch, clone, setData } = useSwiggyData();
 
-  console.log("asdasd",dataOne)
-
   const clickHandler = () => {
     const filterData = dataOne.filter((value) => value.info.avgRating > 4);
     setData(filterData);
@@ -27,7 +25,6 @@ const Body = () => {
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
-            console.log(search);
           }}
         />
         <i
@@ -62,7 +59,7 @@ const Body = () => {
           <Shimmer />
         ) : (
           dataOne.map((value) => 
-            <Link to={`/restaurants/${value.info.id}`}>
+            <Link to={`/restaurants/${value.info.id}`} key = {value.info.id}>
                 <Card cardInfo={value} key = {value.info.id}/> 
             </Link>
           )
