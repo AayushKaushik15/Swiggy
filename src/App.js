@@ -7,7 +7,7 @@ import RestaurantsMenu from "./Components/RestaurantsMenu";
 const Grocery = lazy(() => import("./Components/Grocery"))     //* lazy loading also known as on demand loading
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-
+import Cart from "./Components/Cart";
 
 function App () {
     return (
@@ -31,11 +31,15 @@ const rout = createBrowserRouter([
             },
             {
                 path : "/grocery",
-                element : <Suspense fallback={<h1>nice</h1>}><Grocery/></Suspense>
+                element : <Suspense fallback={<h1>issue found here!</h1>}><Grocery/></Suspense>
             },
             {
                 path : "/restaurants/:resId",
                 element : <RestaurantsMenu/>
+            },
+            {
+                path : "/cart",
+                element : <Cart/>
             }
 
         ]

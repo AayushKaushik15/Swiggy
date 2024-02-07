@@ -8,7 +8,7 @@ const ItemList = ({listInfo}) => {
 
     const dispatch = useDispatch();
 
-    const {name, description,imageId, price, defaultPrice} = listInfo?.card?.info
+    const {name, description,imageId, price, defaultPrice} = listInfo?.card?.info || {};
 
     const  handler = (listInfo) =>  {
         //dispatch an action;

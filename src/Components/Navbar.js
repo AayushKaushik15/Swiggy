@@ -16,10 +16,10 @@ const Navbar = () => {
   //selector is a hook inside react 
   //hook is normal js function
 
-  const cart = useSelector(store => store.cart.items);   
+  const cart1 = useSelector(store => store.cart.items);   
   //? we are subscribing the store using the selector
 
-  console.log(cart)
+  console.log(cart1)
   
   return (
     <div className="navbar">
@@ -27,7 +27,7 @@ const Navbar = () => {
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/grocery">Grocery</Link></li>
-        <li>Cart ({cart.length}) <i class="fa-solid fa-cart-shopping"></i></li>
+        <li><Link to="/cart">Cart ({cart1.length})</Link> <i class="fa-solid fa-cart-shopping"></i></li>
         <button onClick={handleButton}>{changeButton}</button>
       </ul>
     </div>

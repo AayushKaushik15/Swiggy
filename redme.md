@@ -23,7 +23,7 @@
 #React Hooks
 (Normal JS utility functions)
 
-useState() - Superpowerful State Variables in react
+useState() - Super powerful State Variables in react
 useEffect()
 
 
@@ -46,4 +46,22 @@ Server Side Routing
 # Last concept from react-series 
 
 
-  - DATE ==> 2 / februrary/ 2024
+  - DATE ==> 2 / february/ 2024
+
+
+# Type of testing (developer)
+
+ - Unit Testing
+ - Integration Testing
+ - e2e (end to end testing)
+
+
+# installing react testing library
+- npm install --save-dev @testing-library/react
+- jest install npm i -d jest
+- jet along with babel npm install --save-dev babel-jest @babel/core @babel/preset-env
+- configure babel.js
+- configure parcel config file to disable default babel transpilation (.parcelrc)
+- jest configuration (npx jest --init)
+- install JSDOM library 
+(npm install --save-dev jest-environment-jsdom);
