@@ -65,3 +65,7 @@ Server Side Routing
 - jest configuration (npx jest --init)
 - install JSDOM library 
 (npm install --save-dev jest-environment-jsdom);
+
+
+
+
